@@ -225,9 +225,34 @@ button {
 .header_section{
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
+   background-color: gray   ;
+
+   background-image: url(../images/banner-bg.png);
     height: auto;
     background-size: 100%;
+    transition: background-image 1s ease-in-out; /* Smooth transition */
+    -webkit-animation-name: background;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes background {
+    0% {
+      background-image: url(../images/banner-bg.png);
+    }
+    33% {
+      background-image: url(../images/img-4.png);
+    }
+    100% {
+      background-image: url(../images/img-7.png);
+    }
+  }
+@media (max-width: 768px) {
+    .header_section {
+        height: 50vh;
+    }
 }
 .bg-light {
     background-color: transparent !important;
@@ -292,6 +317,7 @@ button {
     width: 100%;
     float: left;
     padding: 90px 0px;
+  
 }
 .icon_1{
     width: 100%;
