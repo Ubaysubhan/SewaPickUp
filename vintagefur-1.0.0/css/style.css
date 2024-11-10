@@ -226,7 +226,8 @@ button {
     width: 100%;
     float: left;
    background-color: gray   ;
-
+    object-fit: cover;
+    object-position: center; 
    background-image: url(../images/banner-bg.png);
     height: auto;
     background-size: 100%;
@@ -240,13 +241,16 @@ button {
 
 @-webkit-keyframes background {
     0% {
-      background-image: url(../images/banner-bg.png);
+        object-fit: cover;
+      background-image: url(../images/1.jpg);
     }
     33% {
-      background-image: url(../images/img-4.png);
+        object-fit: cover;
+      background-image: url(../images/3.jpg);
     }
     100% {
-      background-image: url(../images/img-7.png);
+        object-fit: cover;
+      background-image: url(../images/mobil1.png);
     }
   }
 @media (max-width: 768px) {
@@ -275,7 +279,9 @@ button {
     transform: scale(1.05);
 }
 .logo {
-    width: 25%;
+    margin-left: 100px;
+    margin-right: 200px;
+    width: 60px;
     float: left;
 }
 .navbar-light .navbar-nav .nav-link {
@@ -633,7 +639,7 @@ a:hover {
 .who_section{
     width: 100%;
     float: left;
-    background-image: url(../images/bg-1.png);
+    background-image: url(../images/testi1.png);
     height: auto;
     padding-bottom: 55px;
     background-size: 100%;
