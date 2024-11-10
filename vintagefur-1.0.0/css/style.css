@@ -257,6 +257,23 @@ button {
 .bg-light {
     background-color: transparent !important;
 }
+
+.card {
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%; /* Ensures the image fills the card's width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the card without distortion */
+    border-radius: 10px; /* Optional: Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Optional hover effect */
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
 .logo {
     width: 25%;
     float: left;
@@ -558,6 +575,9 @@ a:hover {
   display: block;
   width: 100%;
   height: auto;
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+  border-radius: 10px; /* Optional: Membuat sudut gambar melengkung */
+
 }
 
 .overlay {
